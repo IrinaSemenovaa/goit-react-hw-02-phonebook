@@ -49,21 +49,9 @@ class App extends Component {
     );
     return (
       <div>
-        <h1
-          style={{
-            textAlign: 'center',
-          }}
-        >
-          Phonebook
-        </h1>
+        <h1>Phonebook</h1>
         <ContactForm handleAddContact={this.handleAddContact} />
-        <h2
-          style={{
-            textAlign: 'center',
-          }}
-        >
-          Contacts
-        </h2>
+        <h2>Contacts</h2>
         <SearchBar handleFilterChange={this.handleFilterChange}></SearchBar>
         <ContactList
           contacts={filteredContacts}
